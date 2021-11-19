@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+    $(document).ready(function(){
+        $('p:contains("Martes")').css({
+            backgroundColor: '#925ACC'
+        })
+        
+    });
+
+    //$("p:first") primer
+    //$("p:last") último
+    //$("p:first-child") primer elemento <p> que son el primer hijo de su padre
+    //$("p:last-child") último elemento <p> que son el primer hijo de su padre
+    //$("p:header") header H1, H2, H3
+    //$("p:parent") todos los elementos que son padres de otros
+    //$("*") todos los elementos 
+        
+    </script>
+
+    <style>
+        p {
+            background-color: #6DB5A0;
+            display         : table;
+            color           : #fff; 
+        }
+    </style>
+
+    <title>jquery-3</title>
+</head>
+<body>
+
+<div>
+    <p>Lunes</p>
+    <p>Martes</p>
+    <p>Miercoles</p>
+    <p>Jueves</p>
+    <p>Viernes</p>
+</div>
+
+</body>
+</html>

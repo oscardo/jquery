@@ -8,29 +8,34 @@
     <script>
 
     $(document).ready(function(){
-        $("#btn").click(
-            function(){
-                $("p").hide();
-            }
-        )
-        
-        $("#btnShow").click(
-            function(){
-                $("p").show();
-            }
-        )
+    
+        $("#btn").click(function(){
+            $("div p:nth-child(2)").css({
+                backgroundColor : '#3b5998'
+            });
+        });
     });
+    //odd pares e even impares
         
     </script>
+
+    <style>
+        p {
+            background-color: #3BD16C;
+            display         : table;
+            color           : #fff; 
+        }
+    </style>
 
     <title>jquery-3</title>
 </head>
 <body>
-    <p>primero</p>
-    <p>segundo</p>
-    <p>tercero</p>
-    <button id="btn">Hide los P</button>
-    <button id="btnShow">Show los P</button>
-
+<div>
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <p>Parrafo 3</p>
+    <p>Parrafo 4</p>
+</div>
+<button id="btn">Cambia Color</button>
 </body>
 </html>
