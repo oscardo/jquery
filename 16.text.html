@@ -10,10 +10,10 @@
     $(document).ready(function(){
         $("button").click(
             function(){
-                alert ( $("p").html() );
+                alert ( $("p").text() );
             }
         )
-        
+        $("span").text("Texto de Span");
     });
          
     </script>
@@ -23,7 +23,9 @@
 <body>
     
     <button>Mostrar Alerta</button>
-    <p>Este es un <em>texto</em>...</p>
-    
+    <p>
+        Este es un texto...
+    </p>
+    <span></span>
 </body>
 </html>
