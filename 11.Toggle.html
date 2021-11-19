@@ -10,26 +10,9 @@
     $(document).ready(function(){
         $("#btn").click(
             function(){
-                $("p").fadeOut();
+                $("p").toggle();
             }
         )
-        $("#btn2").click(
-            function(){
-                $("p").fadeIn();
-            }
-        )
-        $("#btn3").click(
-            function(){
-                $("p").fadeTo( "slow", 0.33 );
-            }
-        )
-
-        $("#btn4").click(
-            function(){
-                $("p").fadeToggle();
-            }
-        )
-        
     });
         
     </script>
@@ -40,9 +23,7 @@
     <p>primero</p>
     <p>segundo</p>
     <p>tercero</p>
-    <button id="btn">fadeOut los P</button>
-    <button id="btn2">fadeIn los P</button>
-    <button id="btn3">fadeTo los P</button>
-    <button id="btn4">fadeToggle los P</button>
+    <button id="btn">Toggle los P</button>
+
 </body>
 </html>
