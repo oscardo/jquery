@@ -8,63 +8,56 @@
     <script>
 
     $(document).ready(function(){
-        $("#superior").click(
-                $("#inferior").slideUp(1000)//oculta el contenido
+        $("#cuadrado").click(
+                function(){
+                    $("#cuadrado").animate({
+                        left: '200px',
+                        top: '80px',
+                        left: '280px',
+                        opacity: '0.7',
+                        height: '120px',
+                        width: '120px',
+                        borderRadius: '60px'
+                    })
+                }
             );
-        $("#derecha").click(
-            $("#inferior").slideDown(1000)//muestra contenido
-            );
-        $("#toggle").click(
-            $("#inferior").slideToggle(1000) //muestra o oculta el contenido
-            );    
-    });
         
+    });
+         
     </script>
 
     <style>
-        #superior {
+        #cuadrado {
+            position: relative;
             background-color: #45A482;
-            height: 60px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             text-align: center;
             color: #fff;
+            cursor: pointer;
         }
-        #derecha {
-            background-color: #45B;
-            height: 60px;
-            width: 100px;
-            text-align: center;
-            color: #fff;
-        }
-        #toggle{
-            background-color: #45A500;
-            height: 60px;
-            width: 100px;
-            text-align: center;
-            color: #fff;
-        }
-        #inferior{
-            background-color: #5145a4;
-            height: 100px;
-            width: 150px;
+
+        #txt{
+            position: relative;
+            display: inline-block;
+            top: 35px;
+            width: 80%;
         }
     </style>
 
     <title>jquery-3</title>
 </head>
 <body>
-    <div id="superior">
-        Haz click para contraer
-    </div>
-    <div id="derecha">
-        Haz click para expandir
-    </div>
-    <div id="toggle">
-        Haz click para contraer o expandir 
-    </div>
     
-    <div id="inferior">
-       
+    <div id="cuadrado">
+        Click para animar!!!
     </div>
+
+    <div id="cuadrado">
+        <span id="txt">
+            click para animar!!!!
+        </span>
+    </div>
+
 </body>
 </html>
