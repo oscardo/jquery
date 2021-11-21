@@ -10,41 +10,25 @@
     $(document).ready(function(){
         $("button").click(
         function(){
-            
-            $("div").empty()
-
+            $("div").append("<p>Párrafo Agregado</p>")
         }
         )
-        
+        //adicionar texto html determinando cual es la prioridad
+        //append
+        //preappend
+        //after
+        //before
         
     });
          
     </script>
 
-    <style>
-        div{
-            background-color: #c259cb;
-            color: #fff;
-            font-size: 13px;
-            height: 100px;
-            padding: 10px;
-            text-align: center;
-            width: 300px;
-        }
-    </style>
-
     <title>jquery-3</title>
 </head>
 <body>
     
-    <button>Vaciar Párrafo</button>
-    <div>
-        <p>
-            El elemento que contiene a este párrafo se vaciara,
-            por lo que este párrafo desaparecerá pero el elemento
-            que lo mantiene permanecerá visible.
-        </p>
-    </div>
+    <button>Agregar Párrafo</button>
+    <div></div>
 
 </body>
 </html>
