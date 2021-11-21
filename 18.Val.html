@@ -9,10 +9,9 @@
 
     $(document).ready(function(){
         $("button").click(
-        
-        alert('El input es de tipo: ' + $("input").attr('type') )
-        
-        )
+         function(){   
+            $("span").text( $("input").val() );
+        })
     });
          
     </script>
@@ -21,10 +20,16 @@
 </head>
 <body>
     
+    <p>
+        Escribe algo y luego haz click en el botón
+    </p>
     <input type="text"></input>
     <br>
-    <button>Obtener Atributo</button>
+    <button>Click para generar la información</button>
+    <p>
+    Este es el texto que escribiste:
+        <strong><span></span></strong>
+    </p>
 
 </body>
 </html>
-
