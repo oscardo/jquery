@@ -11,7 +11,7 @@
         $("button").click(
         function(){
             
-            $("div").css('color', '#676aff')
+            $("div").empty()
 
         }
         )
@@ -22,9 +22,14 @@
     </script>
 
     <style>
-        .color{
-           background-color: #3ab076;
-           display: table;
+        div{
+            background-color: #c259cb;
+            color: #fff;
+            font-size: 13px;
+            height: 100px;
+            padding: 10px;
+            text-align: center;
+            width: 300px;
         }
     </style>
 
@@ -32,10 +37,12 @@
 </head>
 <body>
     
-    <button>Cambio de color de fuente de Párrafo</button>
+    <button>Vaciar Párrafo</button>
     <div>
         <p>
-            este es un texto, con cambio!!! 
+            El elemento que contiene a este párrafo se vaciara,
+            por lo que este párrafo desaparecerá pero el elemento
+            que lo mantiene permanecerá visible.
         </p>
     </div>
 
